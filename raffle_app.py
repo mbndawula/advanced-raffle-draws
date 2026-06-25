@@ -77,7 +77,7 @@ def build_wheel_svg(display_nums, rotation=0):
 
 @st.cache_data
 def load_raffle_data():
-    return pd.read_excel(Path(__file__).parent / "Raffle_26Jun26.xlsx")
+    return pd.read_excel(Path(__file__).parent / "Tickets/Demo/Raffle_26Jun26.xlsx")
 
 @st.cache_data
 def prepare_draw_pool(df):
