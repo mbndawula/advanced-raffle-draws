@@ -1,6 +1,6 @@
 # 🎡 Raffle Wheel Draw App
 
-A fun Streamlit web app for conducting raffle draws where winners are selected based on weighted probability (more tickets = higher chance to win).
+A fun web app for conducting raffle draws of all sorts! More tickets = higher chance to win!
 
 ## Features
 
@@ -28,9 +28,10 @@ pip install -r requirements.txt
 
 ```bash
 streamlit run raffle_app.py
+```
 
-
-Alternatively:
+### 3. Alternatively run the app using:
+```bash
 python -m streamlit run raffle_app.py
 ```
 
@@ -53,16 +54,8 @@ The app will open in your browser at `http://localhost:8501`
 
 ## Probability Logic
 
-The app creates an internal "ticket pool" where:
-
-- If someone bought 5 tickets, their 5 numbers appear 5 times in the pool
-- Random selection from this pool = person with more tickets has proportionally higher chance
-- Still completely random - having 50 tickets doesn't guarantee a win
+The app creates a highly advanced internal logic pool.
 
 ## Example
 
-- Alice: 3 tickets (numbers 1, 2, 3)
-- Bob: 2 tickets (numbers 4, 5)
-- Total pool: [1, 2, 3, 4, 5]
-- Alice has 3/5 = 60% chance, Bob has 2/5 = 40% chance
-- But any single draw is random!
+- Nah.
